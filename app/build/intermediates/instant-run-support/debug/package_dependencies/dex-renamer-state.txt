@@ -1,0 +1,7 @@
+#Mon Mar 06 17:31:03 CST 2017
+base.0=C\:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_ac46b0edee08d81200b3fd87d04d585e7a9de528
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-v4-19.1.0_dbe1c78892c2c8630c9d83d6a55c3118cfa4c83e\\classes.dex
+base.1=C\:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-v4-19.1.0_dbe1c78892c2c8630c9d83d6a55c3118cfa4c83e
+file.0=C\:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_ac46b0edee08d81200b3fd87d04d585e7a9de528\\classes.dex

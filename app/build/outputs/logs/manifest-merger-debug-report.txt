@@ -17,7 +17,7 @@ ADDED from C:\uiuc_subject_file\ece\445\TextbookReader\BlueControl\app\src\main\
 		ADDED from C:\uiuc_subject_file\ece\445\TextbookReader\BlueControl\app\src\main\AndroidManifest.xml:2:11-69
 uses-sdk
 ADDED from C:\uiuc_subject_file\ece\445\TextbookReader\BlueControl\app\src\main\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:19.1.0] C:\uiuc_subject_file\ece\445\TextbookReader\BlueControl\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\19.1.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:appcompat-v7:19.1.0] C:\Users\zweng\.android\build-cache\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\output\AndroidManifest.xml:18:5-42
 	android:targetSdkVersion
 		ADDED from C:\uiuc_subject_file\ece\445\TextbookReader\BlueControl\app\src\main\AndroidManifest.xml:9:9-38
 		INJECTED from C:\uiuc_subject_file\ece\445\TextbookReader\BlueControl\app\src\main\AndroidManifest.xml
@@ -36,7 +36,7 @@ ADDED from C:\uiuc_subject_file\ece\445\TextbookReader\BlueControl\app\src\main\
 		ADDED from C:\uiuc_subject_file\ece\445\TextbookReader\BlueControl\app\src\main\AndroidManifest.xml:12:22-71
 application
 ADDED from C:\uiuc_subject_file\ece\445\TextbookReader\BlueControl\app\src\main\AndroidManifest.xml:14:5-32:19
-MERGED from [com.android.support:appcompat-v7:19.1.0] C:\uiuc_subject_file\ece\445\TextbookReader\BlueControl\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\19.1.0\AndroidManifest.xml:19:5-20
+MERGED from [com.android.support:appcompat-v7:19.1.0] C:\Users\zweng\.android\build-cache\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\output\AndroidManifest.xml:19:5-20
 	android:label
 		ADDED from C:\uiuc_subject_file\ece\445\TextbookReader\BlueControl\app\src\main\AndroidManifest.xml:17:9-41
 	android:allowBackup

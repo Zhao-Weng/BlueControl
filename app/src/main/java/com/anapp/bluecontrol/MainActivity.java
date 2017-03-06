@@ -28,6 +28,8 @@ public class MainActivity extends Activity {
   private BluetoothAdapter btAdapter = null;
   private BluetoothSocket btSocket = null;
   private OutputStream outStream = null;
+    //private MyBlueToothService myBlueToothService = null;
+    private ConnectedThread connectedThread = null;
   
   
   // Intent request codes
@@ -105,6 +107,23 @@ public class MainActivity extends Activity {
     // Establish the connection.  This will block until it connects.
     try {
       btSocket.connect();
+//        myBlueToothService = new MyBlueToothService();
+//        myBlueToothService.start();
+        Log.d("TAG","something is correct!");
+        connectedThread = new ConnectedThread(btSocket);
+        connectedThread.start();
+        Toast msg = Toast.makeText(getBaseContext(), "hello start!!!!", Toast.LENGTH_LONG);
+        msg.show();
+        while(true) {
+            Toast msg1 = Toast.makeText(getBaseContext(), Integer.toString(connectedThread.getNum()), Toast.LENGTH_LONG);
+            msg1.show();
+            if (connectedThread.getNum() != -1 &&connectedThread.getNum() != -2 && connectedThread.getNum() != -3 ) {
+                Toast msg2 = Toast.makeText(getBaseContext(), Integer.toString(connectedThread.getNum()), Toast.LENGTH_LONG);
+                msg2.show();
+                break;
+            }
+        }
+
     } catch (IOException e) {
       try {
         btSocket.close();
