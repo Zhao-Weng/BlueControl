@@ -3,39 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="/Users/apple/Desktop/BlueControl/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="C:\uiuc_subject_file\ece\445\TextbookReader\BlueControl\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="1cbb766a77ab8c215557901a2ef2ffcfbd4d5035">
-        <dex dex="/Users/apple/Desktop/BlueControl/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_f9a63564a5692b3278022e3a1d82301e26c18121/classes.dex" />
+        sha1="a9760ed63a67818f4c82a257209bc1676471c5ab">
+        <dex dex="C:\uiuc_subject_file\ece\445\TextbookReader\BlueControl\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_c2fc5e0da020240974149fb73e040fde5b2e7e3e\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/apple/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
-        <dex dex="/Users/apple/Desktop/BlueControl/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-v4-19.1.0_56bfa5fd5598f9f82c3c9ce311944fd8a5205abc/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28">
-        <dex dex="/Users/apple/Desktop/BlueControl/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_643e4dc42f3478e64db4133c80f9f3f5560a9451/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/apple/Desktop/BlueControl/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="C:\uiuc_subject_file\ece\445\TextbookReader\BlueControl\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
-        <dex dex="/Users/apple/Desktop/BlueControl/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_730450f763074870e97f5c30d609097c30417e8a/classes.dex" />
+        <dex dex="C:\uiuc_subject_file\ece\445\TextbookReader\BlueControl\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_4e47ce4a3bb6283147c0e84d45a2f7d6d00e7d43\classes.dex" />
     </item>
 
 </items>

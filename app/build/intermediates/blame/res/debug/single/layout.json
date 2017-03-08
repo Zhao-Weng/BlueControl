@@ -1,106 +1,106 @@
 [
     {
-        "merged": "/Users/apple/Desktop/BlueControl/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
-        "source": "/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/res/layout/abc_list_menu_item_layout.xml"
+        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item.xml",
+        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\layout\\abc_action_mode_close_item.xml"
     },
     {
-        "merged": "/Users/apple/Desktop/BlueControl/app/build/intermediates/res/merged/debug/layout/abc_action_bar_decor_include.xml",
-        "source": "/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/res/layout/abc_action_bar_decor_include.xml"
+        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\layout\\device_list.xml",
+        "source": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\src\\main\\res\\layout\\device_list.xml"
     },
     {
-        "merged": "/Users/apple/Desktop/BlueControl/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
-        "source": "/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/res/layout/abc_expanded_menu_layout.xml"
+        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\layout\\abc_search_view.xml"
     },
     {
-        "merged": "/Users/apple/Desktop/BlueControl/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
-        "source": "/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/res/layout/abc_action_mode_bar.xml"
+        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\layout\\abc_action_menu_layout.xml"
     },
     {
-        "merged": "/Users/apple/Desktop/BlueControl/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
-        "source": "/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/res/layout/abc_action_bar_view_list_nav_layout.xml"
+        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
     },
     {
-        "merged": "/Users/apple/Desktop/BlueControl/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
-        "source": "/Users/apple/Desktop/BlueControl/app/src/main/res/layout/activity_main.xml"
+        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_tabbar.xml",
+        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\layout\\abc_action_bar_tabbar.xml"
     },
     {
-        "merged": "/Users/apple/Desktop/BlueControl/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
-        "source": "/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/res/layout/abc_action_menu_layout.xml"
+        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_tab.xml",
+        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\layout\\abc_action_bar_tab.xml"
     },
     {
-        "merged": "/Users/apple/Desktop/BlueControl/app/build/intermediates/res/merged/debug/layout/abc_action_bar_tabbar.xml",
-        "source": "/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/res/layout/abc_action_bar_tabbar.xml"
+        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
     },
     {
-        "merged": "/Users/apple/Desktop/BlueControl/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
-        "source": "/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/res/layout/abc_action_bar_title_item.xml"
+        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
-        "merged": "/Users/apple/Desktop/BlueControl/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
-        "source": "/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/res/layout/abc_activity_chooser_view_list_item.xml"
+        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\layout\\abc_action_bar_title_item.xml"
     },
     {
-        "merged": "/Users/apple/Desktop/BlueControl/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
-        "source": "/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/res/layout/abc_search_view.xml"
+        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_decor_overlay.xml",
+        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\layout\\abc_action_bar_decor_overlay.xml"
     },
     {
-        "merged": "/Users/apple/Desktop/BlueControl/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
-        "source": "/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/res/layout/abc_search_dropdown_item_icons_2line.xml"
+        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\layout\\device_name.xml",
+        "source": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\src\\main\\res\\layout\\device_name.xml"
     },
     {
-        "merged": "/Users/apple/Desktop/BlueControl/app/build/intermediates/res/merged/debug/layout/abc_action_bar_tab.xml",
-        "source": "/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/res/layout/abc_action_bar_tab.xml"
+        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\layout\\abc_list_menu_item_radio.xml"
     },
     {
-        "merged": "/Users/apple/Desktop/BlueControl/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
-        "source": "/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/res/layout/abc_action_menu_item_layout.xml"
+        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_home.xml",
+        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\layout\\abc_action_bar_home.xml"
     },
     {
-        "merged": "/Users/apple/Desktop/BlueControl/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
-        "source": "/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/res/layout/abc_popup_menu_item_layout.xml"
+        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
-        "merged": "/Users/apple/Desktop/BlueControl/app/build/intermediates/res/merged/debug/layout/abc_action_bar_decor_overlay.xml",
-        "source": "/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/res/layout/abc_action_bar_decor_overlay.xml"
+        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
-        "merged": "/Users/apple/Desktop/BlueControl/app/build/intermediates/res/merged/debug/layout/device_list.xml",
-        "source": "/Users/apple/Desktop/BlueControl/app/src/main/res/layout/device_list.xml"
+        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "/Users/apple/Desktop/BlueControl/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
-        "source": "/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/res/layout/abc_list_menu_item_radio.xml"
+        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "/Users/apple/Desktop/BlueControl/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
-        "source": "/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/res/layout/abc_activity_chooser_view.xml"
+        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
-        "merged": "/Users/apple/Desktop/BlueControl/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
-        "source": "/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/res/layout/abc_list_menu_item_checkbox.xml"
+        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\layout\\abc_list_menu_item_icon.xml"
     },
     {
-        "merged": "/Users/apple/Desktop/BlueControl/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
-        "source": "/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/res/layout/abc_list_menu_item_icon.xml"
+        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "/Users/apple/Desktop/BlueControl/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_include.xml",
-        "source": "/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/res/layout/abc_activity_chooser_view_include.xml"
+        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_decor_include.xml",
+        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\layout\\abc_action_bar_decor_include.xml"
     },
     {
-        "merged": "/Users/apple/Desktop/BlueControl/app/build/intermediates/res/merged/debug/layout/device_name.xml",
-        "source": "/Users/apple/Desktop/BlueControl/app/src/main/res/layout/device_name.xml"
+        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "/Users/apple/Desktop/BlueControl/app/build/intermediates/res/merged/debug/layout/abc_action_bar_home.xml",
-        "source": "/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/res/layout/abc_action_bar_home.xml"
+        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
-        "merged": "/Users/apple/Desktop/BlueControl/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
-        "source": "/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/res/layout/support_simple_spinner_dropdown_item.xml"
+        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_include.xml",
+        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\layout\\abc_activity_chooser_view_include.xml"
     },
     {
-        "merged": "/Users/apple/Desktop/BlueControl/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item.xml",
-        "source": "/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/res/layout/abc_action_mode_close_item.xml"
+        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     }
 ]

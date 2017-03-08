@@ -15,14 +15,10 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.w3c.dom.Text;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.UUID;
-
-import static android.content.ContentValues.TAG;
 
 public class MainActivity extends Activity {
   private static final String TAG = "LEDOnOff";
@@ -272,9 +268,6 @@ public class MainActivity extends Activity {
 
                             arr[i] = (char) mmBuffer[i];
                         }
-//                        System.out.print("The length is:" + arr.length);
-//                        handleThread newThread = new handleThread(arr);
-//                        newThread.start();
                     }
 
                 } catch (IOException e) {
