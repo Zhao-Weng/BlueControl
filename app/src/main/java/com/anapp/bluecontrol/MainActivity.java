@@ -15,24 +15,30 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.UUID;
+
+import static android.content.ContentValues.TAG;
 
 public class MainActivity extends Activity {
   private static final String TAG = "LEDOnOff";
   
-  Button btnOn, btnOff;
+  Button updateButton, btnOff;
   TextView text;
+    TextView dataString;
   
   private BluetoothAdapter btAdapter = null;
   private BluetoothSocket btSocket = null;
   private OutputStream outStream = null;
-    //private MyBlueToothService myBlueToothService = null;
     private ConnectedThread connectedThread = null;
-  
-  
-  // Intent request codes
+    public char[] arr = new char[16];
+    String rfidData = "";
+
+    // Intent request codes
   private static final int REQUEST_CONNECT_DEVICE_SECURE = 1;
   private static final int REQUEST_ENABLE_BT = 3;
   
@@ -49,23 +55,37 @@ public class MainActivity extends Activity {
 
     setContentView(R.layout.activity_main);
 
-    btnOn = (Button) findViewById(R.id.btnOn);
+    updateButton = (Button) findViewById(R.id.update);
     btnOff = (Button) findViewById(R.id.btnOff);
     text = (TextView) findViewById(R.id.textEdit);
-    
-    btnOn.setEnabled(false);
+    dataString = (TextView) findViewById(R.id.textView1);
+    updateButton.setEnabled(false);
     btnOff.setEnabled(false);
-    
+    updateButton.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+
+            for(int i = 0; i<arr.length;i++){
+                System.out.print(arr[i]);
+                rfidData +=arr[i];
+            }
+            System.out.print("Test Data String: ");
+            dataString.setText(rfidData);
+        }
+    });
+
+
     btAdapter = BluetoothAdapter.getDefaultAdapter();
-    
     checkBTState();
     
     //Set<BluetoothDevice> pairedDevices = btAdapter.getBondedDevices();
     
 
   }
-  
-  public void ledOn(View v){
+
+
+
+    public void update(View v){
 	  sendData("1");
       Toast msg = Toast.makeText(getBaseContext(), "LED is ON", Toast.LENGTH_SHORT);
       msg.show();
@@ -82,9 +102,9 @@ public class MainActivity extends Activity {
     super.onResume();
     
     //enable buttons once connection established.
-    btnOn.setEnabled(true);
+    updateButton.setEnabled(true);
     btnOff.setEnabled(true);
-    
+    String dataString = "";
     
     
     // Set up a pointer to the remote node using it's address.
@@ -103,26 +123,15 @@ public class MainActivity extends Activity {
     // Discovery is resource intensive.  Make sure it isn't going on
     // when you attempt to connect and pass your message.
     btAdapter.cancelDiscovery();
-  
+
     // Establish the connection.  This will block until it connects.
     try {
       btSocket.connect();
 //        myBlueToothService = new MyBlueToothService();
 //        myBlueToothService.start();
-        Log.d("TAG","something is correct!");
         connectedThread = new ConnectedThread(btSocket);
         connectedThread.start();
-        Toast msg = Toast.makeText(getBaseContext(), "hello start!!!!", Toast.LENGTH_LONG);
-        msg.show();
-        while(true) {
-            Toast msg1 = Toast.makeText(getBaseContext(), Integer.toString(connectedThread.getNum()), Toast.LENGTH_LONG);
-            msg1.show();
-            if (connectedThread.getNum() != -1 &&connectedThread.getNum() != -2 && connectedThread.getNum() != -3 ) {
-                Toast msg2 = Toast.makeText(getBaseContext(), Integer.toString(connectedThread.getNum()), Toast.LENGTH_LONG);
-                msg2.show();
-                break;
-            }
-        }
+
 
     } catch (IOException e) {
       try {
@@ -212,4 +221,94 @@ public class MainActivity extends Activity {
       }
       return false;
   }
+
+    private class ConnectedThread extends Thread {
+        private final BluetoothSocket mmSocket;
+        private final InputStream mmInStream;
+        private final OutputStream mmOutStream;
+        private int num = -1;
+        private byte[] mmBuffer; // mmBuffer store for the stream
+        public final String testTag = "test";
+        private String dataString = "";
+
+        public int getNum() {
+            return num;
+        }
+
+        public ConnectedThread(BluetoothSocket socket) {
+            mmSocket = socket;
+            InputStream tmpIn = null;
+            OutputStream tmpOut = null;
+
+            // Get the input and output streams; using temp objects because
+            // member streams are final.
+            try {
+                tmpIn = socket.getInputStream();
+            } catch (IOException e) {
+                Log.e(TAG, "Error occurred when creating input stream", e);
+            }
+            try {
+                tmpOut = socket.getOutputStream();
+            } catch (IOException e) {
+                Log.e(TAG, "Error occurred when creating output stream", e);
+            }
+
+            mmInStream = tmpIn;
+            mmOutStream = tmpOut;
+        }
+
+        public void run() {
+            mmBuffer = new byte[32];
+            int numBytes; // bytes returned from read()
+            this.num = -3;
+            // Keep listening to the InputStream until an exception occurs.
+            while (true) {
+                try {
+                    if (mmInStream.available() > 0) {
+                        this.num = -2;
+                        numBytes = mmInStream.read(mmBuffer);
+
+                        for (int i = 0; i < 16; i++) {
+
+                            arr[i] = (char) mmBuffer[i];
+                        }
+//                        System.out.print("The length is:" + arr.length);
+//                        handleThread newThread = new handleThread(arr);
+//                        newThread.start();
+                    }
+
+                } catch (IOException e) {
+                    Log.d(testTag, "Input stream was disconnected", e);
+                    break;
+                }
+            }
+        }
+
+        // Call this from the main activity to send data to the remote device.
+        public void write(byte[] bytes) {
+            try {
+                mmOutStream.write(bytes);
+
+            } catch (IOException e) {
+                Log.e(TAG, "Error occurred when sending data", e);
+
+
+                Bundle bundle = new Bundle();
+                bundle.putString("toast",
+                        "Couldn't send data to the other device");
+
+            }
+        }
+
+        // Call this method from the main activity to shut down the connection.
+        public void cancel() {
+            try {
+                mmSocket.close();
+            } catch (IOException e) {
+                Log.e(TAG, "Could not close the connect socket", e);
+            }
+        }
+    }
+
 }
+

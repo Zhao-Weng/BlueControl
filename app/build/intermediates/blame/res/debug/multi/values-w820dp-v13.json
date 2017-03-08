@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
+        "outputFile": "/Users/apple/Desktop/BlueControl/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,13 +11,13 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
+                    "file": "/Users/apple/Desktop/BlueControl/app/src/main/res/values-w820dp/dimens.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 312,
+                        "startOffset": 305,
                         "endColumn": 57,
-                        "endOffset": 365
+                        "endOffset": 358
                     }
                 }
             }

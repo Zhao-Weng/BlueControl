@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+        "outputFile": "/Users/apple/Desktop/BlueControl/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml",
         "map": [
             {
                 "to": {
@@ -12,14 +12,14 @@
                     "endOffset": 184
                 },
                 "from": {
-                    "file": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\src\\main\\res\\values-v11\\styles.xml",
+                    "file": "/Users/apple/Desktop/BlueControl/app/src/main/res/values-v11/styles.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 183,
+                        "startOffset": 177,
                         "endLine": 8,
                         "endColumn": 12,
-                        "endOffset": 314
+                        "endOffset": 306
                     }
                 }
             },
@@ -33,7 +33,7 @@
                     "endOffset": 1026
                 },
                 "from": {
-                    "file": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\values-v11\\values.xml",
+                    "file": "/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/res/values-v11/values.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -54,7 +54,7 @@
                     "endOffset": 1838
                 },
                 "from": {
-                    "file": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\values-v11\\values.xml",
+                    "file": "/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/res/values-v11/values.xml",
                     "position": {
                         "startLine": 23,
                         "startColumn": 4,
@@ -75,7 +75,7 @@
                     "endOffset": 2662
                 },
                 "from": {
-                    "file": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\values-v11\\values.xml",
+                    "file": "/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/res/values-v11/values.xml",
                     "position": {
                         "startLine": 36,
                         "startColumn": 4,
@@ -96,7 +96,7 @@
                     "endOffset": 3516
                 },
                 "from": {
-                    "file": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\values-v11\\values.xml",
+                    "file": "/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/res/values-v11/values.xml",
                     "position": {
                         "startLine": 49,
                         "startColumn": 4,
@@ -116,7 +116,7 @@
                     "endOffset": 3629
                 },
                 "from": {
-                    "file": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\values-v11\\values.xml",
+                    "file": "/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/res/values-v11/values.xml",
                     "position": {
                         "startLine": 68,
                         "startColumn": 4,
@@ -135,7 +135,7 @@
                     "endOffset": 3724
                 },
                 "from": {
-                    "file": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\values-v11\\values.xml",
+                    "file": "/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/res/values-v11/values.xml",
                     "position": {
                         "startLine": 70,
                         "startColumn": 4,
@@ -154,7 +154,7 @@
                     "endOffset": 3841
                 },
                 "from": {
-                    "file": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\values-v11\\values.xml",
+                    "file": "/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/res/values-v11/values.xml",
                     "position": {
                         "startLine": 72,
                         "startColumn": 4,
@@ -173,7 +173,7 @@
                     "endOffset": 3966
                 },
                 "from": {
-                    "file": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\values-v11\\values.xml",
+                    "file": "/Users/apple/.android/build-cache/f7c37c3b858e9c78b9e4a3b4f475b4c2013f03dc/output/res/values-v11/values.xml",
                     "position": {
                         "startLine": 74,
                         "startColumn": 4,
