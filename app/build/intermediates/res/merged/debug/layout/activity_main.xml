@@ -24,12 +24,12 @@
         android:layout_below="@+id/textEdit" >
 
         <Button
-            android:id="@+id/btnOn"
+            android:id="@+id/update"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.50"
             android:onClick="ledOn"
-            android:text="LED ON" />
+            android:text="Updata" />
 
         <Button
             android:id="@+id/btnOff"
@@ -49,5 +49,7 @@
         android:layout_alignParentLeft="true"
         android:text="This application is for use with Arduino and JY-MCU Module."
         android:textColor="#009688" />
+
+
 
 </RelativeLayout>

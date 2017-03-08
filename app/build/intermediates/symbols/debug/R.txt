@@ -250,7 +250,6 @@ int id activity_chooser_view_content 0x7f0b0025
 int id always 0x7f0b0013
 int id beginning 0x7f0b000f
 int id btnOff 0x7f0b003e
-int id btnOn 0x7f0b003d
 int id button_scan 0x7f0b0044
 int id checkbox 0x7f0b002d
 int id collapseActionView 0x7f0b0014
@@ -303,6 +302,7 @@ int id title_new_devices 0x7f0b0042
 int id title_paired_devices 0x7f0b0040
 int id top_action_bar 0x7f0b0020
 int id up 0x7f0b0021
+int id update 0x7f0b003d
 int id useLogo 0x7f0b000e
 int id withText 0x7f0b0017
 int integer abc_max_action_buttons 0x7f090000

@@ -1,7 +1,7 @@
-#Mon Mar 06 17:31:05 CST 2017
-base.0=C\:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_4e47ce4a3bb6283147c0e84d45a2f7d6d00e7d43
+#Wed Mar 08 12:47:30 CST 2017
+base.0=/Users/apple/Desktop/BlueControl/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_730450f763074870e97f5c30d609097c30417e8a
 renamed.1=classes2.dex
 renamed.0=classes.dex
-file.1=C\:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_c2fc5e0da020240974149fb73e040fde5b2e7e3e\\classes.dex
-base.1=C\:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_c2fc5e0da020240974149fb73e040fde5b2e7e3e
-file.0=C\:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_4e47ce4a3bb6283147c0e84d45a2f7d6d00e7d43\\classes.dex
+file.1=/Users/apple/Desktop/BlueControl/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_f9a63564a5692b3278022e3a1d82301e26c18121/classes.dex
+base.1=/Users/apple/Desktop/BlueControl/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_f9a63564a5692b3278022e3a1d82301e26c18121
+file.0=/Users/apple/Desktop/BlueControl/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_730450f763074870e97f5c30d609097c30417e8a/classes.dex

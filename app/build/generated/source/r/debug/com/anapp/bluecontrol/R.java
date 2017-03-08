@@ -831,7 +831,6 @@ containing a value of this type.
         public static final int always=0x7f0b0013;
         public static final int beginning=0x7f0b000f;
         public static final int btnOff=0x7f0b003e;
-        public static final int btnOn=0x7f0b003d;
         public static final int button_scan=0x7f0b0044;
         public static final int checkbox=0x7f0b002d;
         public static final int collapseActionView=0x7f0b0014;
@@ -884,6 +883,7 @@ containing a value of this type.
         public static final int title_paired_devices=0x7f0b0040;
         public static final int top_action_bar=0x7f0b0020;
         public static final int up=0x7f0b0021;
+        public static final int update=0x7f0b003d;
         public static final int useLogo=0x7f0b000e;
         public static final int withText=0x7f0b0017;
     }
