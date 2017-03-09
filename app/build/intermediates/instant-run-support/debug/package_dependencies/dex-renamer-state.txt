@@ -1,0 +1,13 @@
+#Wed Mar 08 19:56:01 CST 2017
+renamed.3=classes2.dex
+renamed.2=classes3.dex
+renamed.1=classes.dex
+renamed.0=classes4.dex
+base.3=C\:\\Projects\\BlueControl\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_bfc3aea4e58de7d1c911281a6387b250a8935af8
+base.2=C\:\\Projects\\BlueControl\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\constraint-layout-solver-1.0.2_2c3b8074feca04a2322451de4b8662948b3268c0
+base.1=C\:\\Projects\\BlueControl\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_ac46b0edee08d81200b3fd87d04d585e7a9de528
+base.0=C\:\\Projects\\BlueControl\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-v4-19.1.0_dbe1c78892c2c8630c9d83d6a55c3118cfa4c83e
+file.3=C\:\\Projects\\BlueControl\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_bfc3aea4e58de7d1c911281a6387b250a8935af8\\classes.dex
+file.2=C\:\\Projects\\BlueControl\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\constraint-layout-solver-1.0.2_2c3b8074feca04a2322451de4b8662948b3268c0\\classes.dex
+file.1=C\:\\Projects\\BlueControl\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_ac46b0edee08d81200b3fd87d04d585e7a9de528\\classes.dex
+file.0=C\:\\Projects\\BlueControl\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-v4-19.1.0_dbe1c78892c2c8630c9d83d6a55c3118cfa4c83e\\classes.dex

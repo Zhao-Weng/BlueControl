@@ -21,8 +21,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.UUID;
 
 public class MainActivity extends Activity {
@@ -40,6 +43,8 @@ public class MainActivity extends Activity {
     public char[] arr = new char[16];
     String rfidData = "";
 
+    private Map<String, String> map = null;
+    private Set<String> hs = null;
     // Intent request codes
   private static final int REQUEST_CONNECT_DEVICE_SECURE = 1;
   private static final int REQUEST_ENABLE_BT = 3;
@@ -56,17 +61,18 @@ public class MainActivity extends Activity {
     super.onCreate(savedInstanceState);
 
     setContentView(R.layout.activity_main);
-
-//      Intent intent = getIntent();
-//      Map<String, String> map = (HashMap<String, String>)intent.getSerializableExtra("map");
-//      if (map != null ) {
-//          showCheckList(map);
-//      }
-
-
-
-
       checkList = (ListView) findViewById(R.id.list);
+      Intent intent = getIntent();
+      map = (HashMap<String, String>)intent.getSerializableExtra("map");
+      hs = new HashSet<>(map.values());
+      if (map != null ) {
+          showCheckList(hs);
+      }
+
+
+
+
+
     updateButton = (Button) findViewById(R.id.update);
     btnOff = (Button) findViewById(R.id.btnOff);
     text = (TextView) findViewById(R.id.textEdit);
@@ -92,9 +98,9 @@ public class MainActivity extends Activity {
 
   }
 
-    private void showCheckList(Map<String, String> map) {
+    private void showCheckList(Set<String> hs) {
         if (map != null && map.size() > 0) {
-            List<String> entries = new ArrayList<>(map.values());
+            List<String> entries = new ArrayList<>(hs);
             String[] arr = new String[entries.size()];
             int i = 0;
             for (String name : entries) {
@@ -113,11 +119,11 @@ public class MainActivity extends Activity {
     }
 
 
-    public void update(View v){
-	  sendData("1");
-      Toast msg = Toast.makeText(getBaseContext(), "LED is ON", Toast.LENGTH_SHORT);
-      msg.show();
-  }
+//    public void update(View v){
+//	  sendData("1");
+//      Toast msg = Toast.makeText(getBaseContext(), "LED is ON", Toast.LENGTH_SHORT);
+//      msg.show();
+//  }
   
   public void ledOff(View v){
 	  sendData("0");
@@ -260,9 +266,9 @@ public class MainActivity extends Activity {
         public final String testTag = "test";
         private String dataString = "";
 
-        public int getNum() {
-            return num;
-        }
+//        public int getNum() {
+//            return num;
+//        }
 
         public ConnectedThread(BluetoothSocket socket) {
             mmSocket = socket;

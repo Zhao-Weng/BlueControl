@@ -1,46 +1,10 @@
 [
     {
-        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
-        "source": "C:\\Users\\zweng\\.android\\build-cache\\4afeec2aed862dfd7afabc6f2c427910f5f85c37\\output\\res\\anim\\abc_popup_enter.xml"
-    },
-    {
-        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
-        "source": "C:\\Users\\zweng\\.android\\build-cache\\4afeec2aed862dfd7afabc6f2c427910f5f85c37\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
-    },
-    {
         "merged": "C:\\Projects\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
         "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\anim\\abc_fade_in.xml"
     },
     {
-        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
-        "source": "C:\\Users\\zweng\\.android\\build-cache\\4afeec2aed862dfd7afabc6f2c427910f5f85c37\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
-    },
-    {
-        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
-        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\anim\\abc_slide_out_bottom.xml"
-    },
-    {
-        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
-        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\anim\\abc_fade_in.xml"
-    },
-    {
-        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
-        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\anim\\abc_slide_in_bottom.xml"
-    },
-    {
-        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
-        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\anim\\abc_slide_in_top.xml"
-    },
-    {
-        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
-        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\anim\\abc_slide_out_top.xml"
-    },
-    {
         "merged": "C:\\Projects\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
-        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\anim\\abc_fade_out.xml"
-    },
-    {
-        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
         "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\anim\\abc_fade_out.xml"
     },
     {
@@ -50,10 +14,6 @@
     {
         "merged": "C:\\Projects\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
         "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\anim\\abc_slide_out_top.xml"
-    },
-    {
-        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
-        "source": "C:\\Users\\zweng\\.android\\build-cache\\4afeec2aed862dfd7afabc6f2c427910f5f85c37\\output\\res\\anim\\abc_popup_exit.xml"
     },
     {
         "merged": "C:\\Projects\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",

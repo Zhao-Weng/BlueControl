@@ -1,9 +1,5 @@
 [
     {
-        "merged": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\menu\\option_menu.xml",
-        "source": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\src\\main\\res\\menu\\option_menu.xml"
-    },
-    {
         "merged": "C:\\Projects\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\menu\\option_menu.xml",
         "source": "C:\\Projects\\BlueControl\\app\\src\\main\\res\\menu\\option_menu.xml"
     }

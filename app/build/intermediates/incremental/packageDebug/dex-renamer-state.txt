@@ -1,4 +1,7 @@
-#Wed Mar 08 19:32:23 CST 2017
-base.0=C\:\\Projects\\BlueControl\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
-renamed.0=classes.dex
-file.0=C\:\\Projects\\BlueControl\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+#Wed Mar 08 19:56:02 CST 2017
+base.0=C\:\\Projects\\BlueControl\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_ff8dad929adb6675e7702004758991f262b4dc07
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Projects\\BlueControl\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_999812c1b970492452de8dbfc73c1914ff3ec7a0\\classes.dex
+base.1=C\:\\Projects\\BlueControl\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_999812c1b970492452de8dbfc73c1914ff3ec7a0
+file.0=C\:\\Projects\\BlueControl\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_ff8dad929adb6675e7702004758991f262b4dc07\\classes.dex

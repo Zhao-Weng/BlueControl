@@ -1,48 +1,5 @@
 [
     {
-        "outputFile": "C:\\uiuc_subject_file\\ece\\445\\TextbookReader\\BlueControl\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v14\\values-large-v14.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 107,
-                    "endOffset": 158
-                },
-                "from": {
-                    "file": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\values-large-v14\\values.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 289,
-                        "endColumn": 108,
-                        "endOffset": 393
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 3,
-                    "startColumn": 4,
-                    "startOffset": 163,
-                    "endColumn": 119,
-                    "endOffset": 278
-                },
-                "from": {
-                    "file": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\values-large-v14\\values.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 399,
-                        "endColumn": 120,
-                        "endOffset": 515
-                    }
-                }
-            }
-        ]
-    },
-    {
         "outputFile": "C:\\Projects\\BlueControl\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v14\\values-large-v14.xml",
         "map": [
             {

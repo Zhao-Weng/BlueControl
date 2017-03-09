@@ -2,22 +2,40 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
+        is-multidex="true"
         jar="C:\Users\zweng\.android\build-cache\a1cf9a069b411ba3bc9eb4a9d3f56825a232f627\output\jars\classes.jar"
-        jumboMode="false"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
-        <dex dex="C:\Projects\BlueControl\app\build\intermediates\pre-dexed\debug\classes_bfc3aea4e58de7d1c911281a6387b250a8935af8.jar" />
+        <dex dex="C:\Projects\BlueControl\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bfc3aea4e58de7d1c911281a6387b250a8935af8\classes.dex" />
     </item>
     <item
-        is-multidex="false"
+        is-multidex="true"
+        jar="C:\Projects\BlueControl\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f0a1c7a9354c558e490a74a235d1c66887892cf9">
+        <dex dex="C:\Projects\BlueControl\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_999812c1b970492452de8dbfc73c1914ff3ec7a0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\zweng\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
-        jumboMode="false"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
-        <dex dex="C:\Projects\BlueControl\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_2c3b8074feca04a2322451de4b8662948b3268c0.jar" />
+        <dex dex="C:\Projects\BlueControl\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_2c3b8074feca04a2322451de4b8662948b3268c0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Projects\BlueControl\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="C:\Projects\BlueControl\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_ff8dad929adb6675e7702004758991f262b4dc07\classes.dex" />
     </item>
 
 </items>
