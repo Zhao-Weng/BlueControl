@@ -8,6 +8,10 @@
         "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\drawable-xxhdpi\\abc_ic_cab_done_holo_light.png"
     },
     {
+        "merged": "C:\\Projects\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_action_name.png",
+        "source": "C:\\Projects\\BlueControl\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_name.png"
+    },
+    {
         "merged": "C:\\Projects\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\abc_spinner_ab_pressed_holo_dark.9.png",
         "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\drawable-xxhdpi\\abc_spinner_ab_pressed_holo_dark.9.png"
     },

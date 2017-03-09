@@ -1260,9 +1260,10 @@ containing a value of this type.
         public static final int abc_textfield_searchview_holo_light=0x7f020054;
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020055;
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
-        public static final int ic_launcher=0x7f020057;
-        public static final int search_icon=0x7f020058;
-        public static final int white_cursor=0x7f020059;
+        public static final int ic_action_name=0x7f020057;
+        public static final int ic_launcher=0x7f020058;
+        public static final int search_icon=0x7f020059;
+        public static final int white_cursor=0x7f02005a;
     }
     public static final class id {
         public static final int action_bar=0x7f0b0024;
@@ -1284,7 +1285,7 @@ containing a value of this type.
         public static final int basic=0x7f0b000c;
         public static final int beginning=0x7f0b0018;
         public static final int bookName=0x7f0b0045;
-        public static final int button_scan=0x7f0b0053;
+        public static final int button_scan=0x7f0b0054;
         public static final int chains=0x7f0b000d;
         public static final int checkbox=0x7f0b0035;
         public static final int collapseActionView=0x7f0b001c;
@@ -1303,16 +1304,16 @@ containing a value of this type.
         public static final int ifRoom=0x7f0b001d;
         public static final int image=0x7f0b002f;
         public static final int linear=0x7f0b004b;
-        public static final int list=0x7f0b004d;
+        public static final int list=0x7f0b004e;
         public static final int listMode=0x7f0b000f;
         public static final int list_item=0x7f0b0031;
         public static final int middle=0x7f0b001a;
         public static final int never=0x7f0b001e;
-        public static final int new_devices=0x7f0b0052;
+        public static final int new_devices=0x7f0b0053;
         public static final int none=0x7f0b000e;
         public static final int normal=0x7f0b0010;
         public static final int packed=0x7f0b0009;
-        public static final int paired_devices=0x7f0b0050;
+        public static final int paired_devices=0x7f0b0051;
         public static final int parent=0x7f0b0006;
         public static final int progress_circular=0x7f0b0004;
         public static final int progress_horizontal=0x7f0b0005;
@@ -1328,7 +1329,7 @@ containing a value of this type.
         public static final int search_plate=0x7f0b003e;
         public static final int search_src_text=0x7f0b003f;
         public static final int search_voice_btn=0x7f0b0043;
-        public static final int secure_connect_scan=0x7f0b0054;
+        public static final int secure_connect_scan=0x7f0b0055;
         public static final int shortcut=0x7f0b0036;
         public static final int showCustom=0x7f0b0014;
         public static final int showHome=0x7f0b0015;
@@ -1340,10 +1341,11 @@ containing a value of this type.
         public static final int tabMode=0x7f0b0011;
         public static final int tagId=0x7f0b0046;
         public static final int textEdit=0x7f0b004a;
-        public static final int textView1=0x7f0b004e;
+        public static final int textView1=0x7f0b004f;
         public static final int title=0x7f0b0033;
-        public static final int title_new_devices=0x7f0b0051;
-        public static final int title_paired_devices=0x7f0b004f;
+        public static final int title1=0x7f0b004d;
+        public static final int title_new_devices=0x7f0b0052;
+        public static final int title_paired_devices=0x7f0b0050;
         public static final int top_action_bar=0x7f0b0028;
         public static final int up=0x7f0b0029;
         public static final int update=0x7f0b004c;
@@ -1420,8 +1422,15 @@ containing a value of this type.
     public static final class style {
         /**  API 11 theme customizations can go here. 
  API 14 theme customizations can go here. 
+
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        
          */
         public static final int AppBaseTheme=0x7f080002;
+        /**  All customizations that are NOT specific to a particular API-level can go here. 
+         */
         public static final int AppTheme=0x7f080042;
         public static final int TextAppearance_AppCompat_Base_CompactMenu_Dialog=0x7f080043;
         public static final int TextAppearance_AppCompat_Base_SearchResult=0x7f080044;

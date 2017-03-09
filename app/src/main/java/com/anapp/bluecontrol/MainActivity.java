@@ -111,7 +111,7 @@ public class MainActivity extends Activity {
         }
         else {
             String[] notFound = new String[1];
-            notFound[0] = new String("No books");
+            notFound[0] = new String("No books missing");
 
             ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.list_item, notFound);
             checkList.setAdapter(adapter);

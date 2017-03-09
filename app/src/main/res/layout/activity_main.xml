@@ -41,14 +41,22 @@
             <!--android:text="LED OFF" />-->
 
     </LinearLayout>
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linear"
+        android:text="Missing books"
+        android:textColor="#009688"
+        android:layout_below="@+id/linear"/>
 
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/list"
-        android:layout_alignLeft="@+id/linear"
+        android:layout_alignLeft="@+id/title1"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/linear"/>
+        android:layout_below="@+id/title1"/>
 
     <TextView
         android:id="@+id/textView1"
