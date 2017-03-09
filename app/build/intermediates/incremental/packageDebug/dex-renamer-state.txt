@@ -1,4 +1,4 @@
-#Wed Mar 08 19:56:02 CST 2017
+#Wed Mar 08 20:40:16 CST 2017
 base.0=C\:\\Projects\\BlueControl\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_ff8dad929adb6675e7702004758991f262b4dc07
 renamed.1=classes.dex
 renamed.0=classes2.dex
