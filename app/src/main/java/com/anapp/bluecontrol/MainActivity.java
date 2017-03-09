@@ -11,13 +11,18 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 
 public class MainActivity extends Activity {
@@ -26,7 +31,8 @@ public class MainActivity extends Activity {
   Button updateButton, btnOff;
   TextView text;
     TextView dataString;
-  
+
+    private ListView checkList;
   private BluetoothAdapter btAdapter = null;
   private BluetoothSocket btSocket = null;
   private OutputStream outStream = null;
@@ -51,6 +57,16 @@ public class MainActivity extends Activity {
 
     setContentView(R.layout.activity_main);
 
+//      Intent intent = getIntent();
+//      Map<String, String> map = (HashMap<String, String>)intent.getSerializableExtra("map");
+//      if (map != null ) {
+//          showCheckList(map);
+//      }
+
+
+
+
+      checkList = (ListView) findViewById(R.id.list);
     updateButton = (Button) findViewById(R.id.update);
     btnOff = (Button) findViewById(R.id.btnOff);
     text = (TextView) findViewById(R.id.textEdit);
@@ -73,12 +89,28 @@ public class MainActivity extends Activity {
 
     btAdapter = BluetoothAdapter.getDefaultAdapter();
     checkBTState();
-    
-    //Set<BluetoothDevice> pairedDevices = btAdapter.getBondedDevices();
-    
 
   }
 
+    private void showCheckList(Map<String, String> map) {
+        if (map != null && map.size() > 0) {
+            List<String> entries = new ArrayList<>(map.values());
+            String[] arr = new String[entries.size()];
+            int i = 0;
+            for (String name : entries) {
+                arr[i++] = name;
+            }
+            ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.list_item, arr);
+            checkList.setAdapter(adapter);
+        }
+        else {
+            String[] notFound = new String[1];
+            notFound[0] = new String("No books");
+
+            ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.list_item, notFound);
+            checkList.setAdapter(adapter);
+        }
+    }
 
 
     public void update(View v){
@@ -92,7 +124,8 @@ public class MainActivity extends Activity {
       Toast msg = Toast.makeText(getBaseContext(), "LED is OFF", Toast.LENGTH_SHORT);
       msg.show();
   }
-  
+
+
 
   public void connectToDevice(String adr) {
     super.onResume();

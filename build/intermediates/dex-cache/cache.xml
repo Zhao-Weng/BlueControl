@@ -2,22 +2,22 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="C:\uiuc_subject_file\ece\445\TextbookReader\BlueControl\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\zweng\.android\build-cache\a1cf9a069b411ba3bc9eb4a9d3f56825a232f627\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="a9760ed63a67818f4c82a257209bc1676471c5ab">
-        <dex dex="C:\uiuc_subject_file\ece\445\TextbookReader\BlueControl\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_c2fc5e0da020240974149fb73e040fde5b2e7e3e\classes.dex" />
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Projects\BlueControl\app\build\intermediates\pre-dexed\debug\classes_bfc3aea4e58de7d1c911281a6387b250a8935af8.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\uiuc_subject_file\ece\445\TextbookReader\BlueControl\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\zweng\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
-        <dex dex="C:\uiuc_subject_file\ece\445\TextbookReader\BlueControl\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_4e47ce4a3bb6283147c0e84d45a2f7d6d00e7d43\classes.dex" />
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Projects\BlueControl\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_2c3b8074feca04a2322451de4b8662948b3268c0.jar" />
     </item>
 
 </items>
