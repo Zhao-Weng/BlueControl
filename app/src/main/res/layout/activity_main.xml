@@ -30,7 +30,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.50"
             android:onClick="ledOn"
-            android:text="Updata" />
+            android:text="Update" />
+
+
 
         <!--<Button-->
             <!--android:id="@+id/btnOff"-->
@@ -41,6 +43,34 @@
             <!--android:text="LED OFF" />-->
 
     </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textEdit"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linear" >
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+
+            android:text="add"
+            />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+
+            android:text="delete"
+            />
+
+    </LinearLayout>
+
     <TextView
         android:id="@+id/title1"
         android:layout_width="wrap_content"
@@ -48,7 +78,7 @@
         android:layout_alignLeft="@+id/linear"
         android:text="Missing books"
         android:textColor="#009688"
-        android:layout_below="@+id/linear"/>
+        android:layout_below="@+id/linear2"/>
 
     <ListView
         android:layout_width="wrap_content"

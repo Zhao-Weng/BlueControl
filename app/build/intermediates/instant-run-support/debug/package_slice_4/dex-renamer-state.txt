@@ -1,4 +1,4 @@
-#Tue Mar 28 11:53:08 CDT 2017
+#Tue Mar 28 12:46:36 CDT 2017
 base.0=C\:\\Projects\\BlueControl\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_4
 renamed.0=classes.dex
 file.0=C\:\\Projects\\BlueControl\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_4\\classes.dex

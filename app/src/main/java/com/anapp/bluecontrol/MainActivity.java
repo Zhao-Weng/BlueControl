@@ -28,12 +28,15 @@ import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
 
+import static com.anapp.bluecontrol.R.id.add;
+
 public class MainActivity extends Activity {
   private static final String TAG = "LEDOnOff";
   
-  Button updateButton, btnOff;
+  Button updateButton, addButton, deleteButton;
   TextView text;
     TextView dataString;
+    Boolean addEnable, deleteEnable;
 
     private ListView checkList;
   private BluetoothAdapter btAdapter = null;
@@ -76,12 +79,30 @@ public class MainActivity extends Activity {
 
 
 
-    updateButton = (Button) findViewById(R.id.update);
+
     //btnOff = (Button) findViewById(R.id.btnOff);
     text = (TextView) findViewById(R.id.textEdit);
     dataString = (TextView) findViewById(R.id.textView1);
-    updateButton.setEnabled(false);
+      updateButton = (Button) findViewById(R.id.update);
+      updateButton.setEnabled(false);
+      addButton = (Button) findViewById(add);
+      addButton.setEnabled(false);
+      deleteButton = (Button) findViewById(R.id.delete);
+      deleteButton.setEnabled(false);
     //btnOff.setEnabled(false);
+      addButton.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+              addEnable = true;
+          }
+      });
+      deleteButton.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+
+            deleteEnable = true;
+          }
+      });
     updateButton.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
@@ -143,6 +164,8 @@ public class MainActivity extends Activity {
     
     //enable buttons once connection established.
     updateButton.setEnabled(true);
+      addButton.setEnabled(true);
+      deleteButton.setEnabled(true);
     //btnOff.setEnabled(true);
     String dataString = "";
     
@@ -330,11 +353,11 @@ public class MainActivity extends Activity {
                             String bookN = map.get(item);
                            if (bookN != null) System.out.printf("book is %s\n", bookN);
                             else System.out.println("bookN is null");
-                            if (hs.contains(bookN)) {
+                            if (hs.contains(bookN) && addEnable) {
                                 hs.remove(bookN);            //previously missing, now in the bag
                                 System.out.printf("remove book %s\n", bookN);
                             }
-                            else {
+                            else if (deleteEnable){
                                 hs.add(bookN);               //previously in the bag, now missing
                             }
                             //showCheckList(hs);   //update checklist and show it.
