@@ -1,23 +1,23 @@
 [
     {
-        "merged": "C:\\Projects\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_menu_moreoverflow_normal_holo_light.png",
-        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\drawable-xhdpi\\abc_ic_menu_moreoverflow_normal_holo_light.png"
-    },
-    {
         "merged": "C:\\Projects\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_spinner_ab_focused_holo_dark.9.png",
         "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\drawable-xhdpi\\abc_spinner_ab_focused_holo_dark.9.png"
+    },
+    {
+        "merged": "C:\\Projects\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_menu_moreoverflow_normal_holo_light.png",
+        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\drawable-xhdpi\\abc_ic_menu_moreoverflow_normal_holo_light.png"
     },
     {
         "merged": "C:\\Projects\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_textfield_search_right_default_holo_light.9.png",
         "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\drawable-xhdpi\\abc_textfield_search_right_default_holo_light.9.png"
     },
     {
-        "merged": "C:\\Projects\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_list_focused_holo.9.png",
-        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\drawable-xhdpi\\abc_list_focused_holo.9.png"
-    },
-    {
         "merged": "C:\\Projects\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ab_share_pack_holo_dark.9.png",
         "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\drawable-xhdpi\\abc_ab_share_pack_holo_dark.9.png"
+    },
+    {
+        "merged": "C:\\Projects\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_list_focused_holo.9.png",
+        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\drawable-xhdpi\\abc_list_focused_holo.9.png"
     },
     {
         "merged": "C:\\Projects\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ab_share_pack_holo_light.9.png",

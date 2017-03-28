@@ -64,6 +64,9 @@ public class MainActivity extends Activity {
       checkList = (ListView) findViewById(R.id.list);
       Intent intent = getIntent();
       map = (HashMap<String, String>)intent.getSerializableExtra("map");
+      for (String key:map.keySet()) {
+          System.out.printf("map keys are %s\n", key);
+      }
       hs = new HashSet<>(map.values());
       if (map != null ) {
           showCheckList(hs);
@@ -89,6 +92,7 @@ public class MainActivity extends Activity {
             }
             System.out.print("Test Data String: ");
             dataString.setText(rfidData);
+            showCheckList(hs);
         }
     });
 
@@ -99,19 +103,20 @@ public class MainActivity extends Activity {
   }
 
     private void showCheckList(Set<String> hs) {
-        if (map != null && map.size() > 0) {
+        if (hs != null && hs.size() > 0) {
             List<String> entries = new ArrayList<>(hs);
             String[] arr = new String[entries.size()];
             int i = 0;
             for (String name : entries) {
                 arr[i++] = name;
             }
+            for (String k : hs) System.out.printf("check list contains %s\n", k);
             ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.list_item, arr);
             checkList.setAdapter(adapter);
         }
         else {
             String[] notFound = new String[1];
-            notFound[0] = new String("No books missing");
+            notFound[0] = new String("No books missing\n");
 
             ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.list_item, notFound);
             checkList.setAdapter(adapter);
@@ -297,6 +302,8 @@ public class MainActivity extends Activity {
             int numBytes; // bytes returned from read()
             this.num = -3;
             // Keep listening to the InputStream until an exception occurs.
+            System.out.println("testinge");
+
             while (true) {
                 try {
                     if (mmInStream.available() > 0) {
@@ -308,15 +315,29 @@ public class MainActivity extends Activity {
                             arr[i] = (char) mmBuffer[i];
                         }
                         String tag = String.valueOf(arr);
-                        if (map.containsKey(tag)) {
-                            String bookN = map.get(tag);
+//                        if (map == null || map.size() == 0) System.out.printf("testing2332");
+//                        for (String item: map.keySet()) {
+//                            System.out.printf("testing" + item);
+//                        }
+
+
+                        for (String k: map.keySet()) System.out.printf("hm keys are %s", k);
+                        System.out.printf("tag is %s", tag);
+                        String item = contain(map, tag);
+                        if (item != null) System.out.printf("item is %s\n", item);
+                        else System.out.printf("item is null");
+                        if (item != null) {
+                            String bookN = map.get(item);
+                           if (bookN != null) System.out.printf("book is %s\n", bookN);
+                            else System.out.println("bookN is null");
                             if (hs.contains(bookN)) {
                                 hs.remove(bookN);            //previously missing, now in the bag
+                                System.out.printf("remove book %s\n", bookN);
                             }
                             else {
                                 hs.add(bookN);               //previously in the bag, now missing
                             }
-                            showCheckList(hs);   //update checklist and show it.
+                            //showCheckList(hs);   //update checklist and show it.
                         }
                     }
 
@@ -328,6 +349,41 @@ public class MainActivity extends Activity {
         }
 
         // Call this from the main activity to send data to the remote device.
+        public String contain(Map<String, String> hm, String tag) {
+            for (String item: hm.keySet()) {
+                System.out.printf("distance is %d\n", wordDistance(item, tag.substring(0, 9)));
+                System.out.printf("tag substring is %s\n", tag.substring(0, 9));
+                if (wordDistance(item, tag.substring(0, 9)) <= 2) {
+                    System.out.printf("return from contain");
+
+                    return item;
+                }
+            }
+            return null;
+        }
+
+        public  int wordDistance( String word1, String word2) {
+            if (word1 == null || word2 == null) return Integer.MAX_VALUE / 2;
+            int l1 = word1.length(), l2 = word2.length();
+            int[][] arr = new int[2][l1 + 1];
+            for (int i = 0; i <= l1; i++) arr[0][i] = i;
+            int which = 1;
+            for (int i = 1; i <= l2; i ++) {
+                arr[which % 2][0] = i;
+                for (int j = 1; j <= l1; j++) {
+                    if (word1.charAt(j - 1) == word2.charAt(i - 1)) {
+                        arr[which % 2][j] = arr[(which + 1) % 2][j - 1];
+                        //System.out.printf("hello %b\n", '7' == '7');
+                    }
+                    else {
+                        int m = Math.min(arr[(which + 1) % 2][j], arr[which % 2][j - 1]);
+                        arr[which % 2][j] = Math.min(m, arr[(which + 1) %2][j - 1]) + 1;
+                    }
+                }
+                which = 1 - which;
+            }
+            return arr[(which + 1) %2][l1];
+        }
         public void write(byte[] bytes) {
             try {
                 mmOutStream.write(bytes);
