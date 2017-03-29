@@ -36,7 +36,7 @@ public class MainActivity extends Activity {
   Button updateButton, addButton, deleteButton;
   TextView text;
     TextView dataString;
-    Boolean addEnable;
+    Boolean addEnable = false;
 
     private ListView checkList;
   private BluetoothAdapter btAdapter = null;
@@ -44,7 +44,7 @@ public class MainActivity extends Activity {
   private OutputStream outStream = null;
     private ConnectedThread connectedThread = null;
     public char[] arr = new char[16];
-    String rfidData = "";
+    String rfidData = " ";
 
     private Map<String, String> map = null;
     private Set<String> hs = null;
@@ -94,26 +94,28 @@ public class MainActivity extends Activity {
           @Override
           public void onClick(View view) {
               addEnable = true;
-//              for(int i = 0; i<arr.length;i++){
-//                  System.out.print(arr[i]);
-//                  rfidData +=arr[i];
-//              }
-//              System.out.print("Test Data String: ");
-//              dataString.setText(rfidData);
-//              showCheckList(hs);
+              for(int i = 0; i<arr.length;i++){
+                  System.out.print(arr[i]);
+                  rfidData +=arr[i];
+              }
+              System.out.print("Test Data String: ");
+              dataString.setText(rfidData);
+              showCheckList(hs);
           }
       });
       deleteButton.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View view) {
               addEnable = false;
-//              for(int i = 0; i<arr.length;i++){
-//                  System.out.print(arr[i]);
-//                  rfidData +=arr[i];
-//              }
-//              System.out.print("Test Data String: ");
-//              dataString.setText(rfidData);
-//              showCheckList(hs);
+              for(int i = 0; i<arr.length;i++){
+                  System.out.print(arr[i]);
+                  rfidData +=arr[i];
+              }
+              System.out.print("Test Data String: ");
+              dataString.setText(rfidData);
+              showCheckList(hs);
+
+
           }
       });
     updateButton.setOnClickListener(new View.OnClickListener() {
