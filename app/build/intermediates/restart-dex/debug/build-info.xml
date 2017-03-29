@@ -6,30 +6,33 @@
     density="xxhdpi"
     format="10"
     plugin-version="2.3.0"
-    timestamp="1490723238668"
+    timestamp="1490801893710"
     token="1447031914886059001"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="201" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="12" />
     <task
         name="verifier"
-        duration="0" />
+        duration="4" />
 
+    <artifact
+        location="C:\Projects\BlueControl\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        type="SPLIT" />
     <artifact
         location="C:\Projects\BlueControl\app\build\outputs\apk\app-debug.apk"
         type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1490722896646"
+        timestamp="1490800660871"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Projects\BlueControl\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
@@ -70,16 +73,19 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1490723193061"
+        timestamp="1490801829919"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Projects\BlueControl\app\build\outputs\apk\app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1490801893710"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Projects\BlueControl\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1490723238668"
-        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Projects\BlueControl\app\build\outputs\apk\app-debug.apk"
             type="SPLIT_MAIN" />

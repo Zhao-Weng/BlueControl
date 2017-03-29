@@ -36,7 +36,7 @@ public class MainActivity extends Activity {
   Button updateButton, addButton, deleteButton;
   TextView text;
     TextView dataString;
-    Boolean addEnable, deleteEnable;
+    Boolean addEnable;
 
     private ListView checkList;
   private BluetoothAdapter btAdapter = null;
@@ -94,13 +94,26 @@ public class MainActivity extends Activity {
           @Override
           public void onClick(View view) {
               addEnable = true;
+//              for(int i = 0; i<arr.length;i++){
+//                  System.out.print(arr[i]);
+//                  rfidData +=arr[i];
+//              }
+//              System.out.print("Test Data String: ");
+//              dataString.setText(rfidData);
+//              showCheckList(hs);
           }
       });
       deleteButton.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View view) {
-
-            deleteEnable = true;
+              addEnable = false;
+//              for(int i = 0; i<arr.length;i++){
+//                  System.out.print(arr[i]);
+//                  rfidData +=arr[i];
+//              }
+//              System.out.print("Test Data String: ");
+//              dataString.setText(rfidData);
+//              showCheckList(hs);
           }
       });
     updateButton.setOnClickListener(new View.OnClickListener() {
@@ -338,10 +351,10 @@ public class MainActivity extends Activity {
                             arr[i] = (char) mmBuffer[i];
                         }
                         String tag = String.valueOf(arr);
-//                        if (map == null || map.size() == 0) System.out.printf("testing2332");
-//                        for (String item: map.keySet()) {
-//                            System.out.printf("testing" + item);
-//                        }
+                        if (map == null || map.size() == 0) System.out.printf("testing2332");
+                        for (String item: map.keySet()) {
+                            System.out.printf("testing" + item);
+                        }
 
 
                         for (String k: map.keySet()) System.out.printf("hm keys are %s", k);
@@ -357,7 +370,7 @@ public class MainActivity extends Activity {
                                 hs.remove(bookN);            //previously missing, now in the bag
                                 System.out.printf("remove book %s\n", bookN);
                             }
-                            else if (deleteEnable){
+                            else if (!addEnable){
                                 hs.add(bookN);               //previously in the bag, now missing
                             }
                             //showCheckList(hs);   //update checklist and show it.
