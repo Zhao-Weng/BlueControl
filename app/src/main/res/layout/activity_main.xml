@@ -16,40 +16,14 @@
         android:textColor="#009688"
         android:textSize="25sp" />
 
-    <LinearLayout
-        android:id="@+id/linear"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textEdit"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/textEdit" >
 
-        <Button
-            android:id="@+id/update"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.50"
-            android:onClick="ledOn"
-            android:text="Update" />
-
-
-
-        <!--<Button-->
-            <!--android:id="@+id/btnOff"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_weight="0.50"-->
-            <!--android:onClick="ledOff"-->
-            <!--android:text="LED OFF" />-->
-
-    </LinearLayout>
     <LinearLayout
         android:id="@+id/linear2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textEdit"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/linear" >
+        android:layout_below="@+id/textEdit" >
 
         <Button
             android:id="@+id/add"
@@ -75,7 +49,7 @@
         android:id="@+id/title1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/linear"
+        android:layout_alignLeft="@+id/linear2"
         android:text="Missing books"
         android:textColor="#009688"
         android:layout_below="@+id/linear2"/>
@@ -88,14 +62,14 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/title1"/>
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:text="This application is for use with Arduino and JY-MCU Module."
-        android:textColor="#009688" />
+    <!--<TextView-->
+        <!--android:id="@+id/textView1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:text="This application is for use with Arduino and JY-MCU Module."-->
+        <!--android:textColor="#009688" />-->
 
 
 

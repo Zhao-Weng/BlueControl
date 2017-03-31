@@ -80,11 +80,10 @@ public class MainActivity extends Activity {
 
 
 
-    //btnOff = (Button) findViewById(R.id.btnOff);
     text = (TextView) findViewById(R.id.textEdit);
-    dataString = (TextView) findViewById(R.id.textView1);
-      updateButton = (Button) findViewById(R.id.update);
-      updateButton.setEnabled(false);
+    //dataString = (TextView) findViewById(R.id.textView1);
+      //updateButton = (Button) findViewById(R.id.update);
+      //updateButton.setEnabled(false);
       addButton = (Button) findViewById(add);
       addButton.setEnabled(false);
       deleteButton = (Button) findViewById(R.id.delete);
@@ -99,7 +98,7 @@ public class MainActivity extends Activity {
                   rfidData +=arr[i];
               }
               System.out.print("Test Data String: ");
-              dataString.setText(rfidData);
+              //dataString.setText(rfidData);
               showCheckList(hs);
           }
       });
@@ -112,25 +111,25 @@ public class MainActivity extends Activity {
                   rfidData +=arr[i];
               }
               System.out.print("Test Data String: ");
-              dataString.setText(rfidData);
+              //dataString.setText(rfidData);
               showCheckList(hs);
 
 
           }
       });
-    updateButton.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-
-            for(int i = 0; i<arr.length;i++){
-                System.out.print(arr[i]);
-                rfidData +=arr[i];
-            }
-            System.out.print("Test Data String: ");
-            dataString.setText(rfidData);
-            showCheckList(hs);
-        }
-    });
+//    updateButton.setOnClickListener(new View.OnClickListener() {
+//        @Override
+//        public void onClick(View view) {
+//
+//            for(int i = 0; i<arr.length;i++){
+//                System.out.print(arr[i]);
+//                rfidData +=arr[i];
+//            }
+//            System.out.print("Test Data String: ");
+//            dataString.setText(rfidData);
+//            showCheckList(hs);
+//        }
+//    });
 
 
     btAdapter = BluetoothAdapter.getDefaultAdapter();
@@ -178,7 +177,8 @@ public class MainActivity extends Activity {
     super.onResume();
     
     //enable buttons once connection established.
-    updateButton.setEnabled(true);
+    //updateButton.setEnabled(true);
+    //updateButton.setEnabled(true);
       addButton.setEnabled(true);
       deleteButton.setEnabled(true);
     //btnOff.setEnabled(true);
