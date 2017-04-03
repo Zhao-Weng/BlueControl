@@ -62,15 +62,22 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/title1"/>
 
-    <!--<TextView-->
-        <!--android:id="@+id/textView1"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_alignParentBottom="true"-->
-        <!--android:layout_alignParentLeft="true"-->
-        <!--android:text="This application is for use with Arduino and JY-MCU Module."-->
-        <!--android:textColor="#009688" />-->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="This application is for use with Arduino and JY-MCU Module."
+        android:textColor="#009688" />
 
+    <Button
+        android:id="@+id/alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.50"
 
-
+        android:text="alert"
+        android:layout_below="@+id/title1"
+        />
 </RelativeLayout>

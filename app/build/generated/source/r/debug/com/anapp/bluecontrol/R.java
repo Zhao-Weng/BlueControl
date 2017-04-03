@@ -1280,12 +1280,13 @@ containing a value of this type.
         public static final int activity_chooser_view_content=0x7f0b002d;
         public static final int activity_input=0x7f0b0044;
         public static final int add=0x7f0b0047;
+        public static final int alert=0x7f0b0050;
         public static final int all=0x7f0b000b;
         public static final int always=0x7f0b001b;
         public static final int basic=0x7f0b000c;
         public static final int beginning=0x7f0b0018;
         public static final int bookName=0x7f0b0045;
-        public static final int button_scan=0x7f0b0053;
+        public static final int button_scan=0x7f0b0055;
         public static final int chains=0x7f0b000d;
         public static final int checkbox=0x7f0b0035;
         public static final int collapseActionView=0x7f0b001c;
@@ -1310,11 +1311,11 @@ containing a value of this type.
         public static final int list_item=0x7f0b0031;
         public static final int middle=0x7f0b001a;
         public static final int never=0x7f0b001e;
-        public static final int new_devices=0x7f0b0052;
+        public static final int new_devices=0x7f0b0054;
         public static final int none=0x7f0b000e;
         public static final int normal=0x7f0b0010;
         public static final int packed=0x7f0b0009;
-        public static final int paired_devices=0x7f0b0050;
+        public static final int paired_devices=0x7f0b0052;
         public static final int parent=0x7f0b0006;
         public static final int progress_circular=0x7f0b0004;
         public static final int progress_horizontal=0x7f0b0005;
@@ -1330,7 +1331,7 @@ containing a value of this type.
         public static final int search_plate=0x7f0b003e;
         public static final int search_src_text=0x7f0b003f;
         public static final int search_voice_btn=0x7f0b0043;
-        public static final int secure_connect_scan=0x7f0b0054;
+        public static final int secure_connect_scan=0x7f0b0056;
         public static final int shortcut=0x7f0b0036;
         public static final int showCustom=0x7f0b0014;
         public static final int showHome=0x7f0b0015;
@@ -1342,10 +1343,11 @@ containing a value of this type.
         public static final int tabMode=0x7f0b0011;
         public static final int tagId=0x7f0b0046;
         public static final int textEdit=0x7f0b004a;
+        public static final int textView1=0x7f0b004f;
         public static final int title=0x7f0b0033;
         public static final int title1=0x7f0b004d;
-        public static final int title_new_devices=0x7f0b0051;
-        public static final int title_paired_devices=0x7f0b004f;
+        public static final int title_new_devices=0x7f0b0053;
+        public static final int title_paired_devices=0x7f0b0051;
         public static final int top_action_bar=0x7f0b0028;
         public static final int up=0x7f0b0029;
         public static final int useLogo=0x7f0b0017;
@@ -1407,29 +1409,24 @@ containing a value of this type.
         public static final int action_settings=0x7f05000d;
         public static final int app_name=0x7f05000e;
         public static final int button_scan=0x7f05000f;
-        public static final int discoverable=0x7f050010;
-        public static final int hello_world=0x7f050011;
-        public static final int insecure_connect=0x7f050012;
-        public static final int none_found=0x7f050013;
-        public static final int none_paired=0x7f050014;
-        public static final int scanning=0x7f050015;
-        public static final int secure_connect=0x7f050016;
-        public static final int select_device=0x7f050017;
-        public static final int title_other_devices=0x7f050018;
-        public static final int title_paired_devices=0x7f050019;
+        public static final int dialog_text=0x7f050010;
+        public static final int dialog_title=0x7f050011;
+        public static final int discoverable=0x7f050012;
+        public static final int hello_world=0x7f050013;
+        public static final int insecure_connect=0x7f050014;
+        public static final int none_found=0x7f050015;
+        public static final int none_paired=0x7f050016;
+        public static final int scanning=0x7f050017;
+        public static final int secure_connect=0x7f050018;
+        public static final int select_device=0x7f050019;
+        public static final int title_other_devices=0x7f05001a;
+        public static final int title_paired_devices=0x7f05001b;
     }
     public static final class style {
         /**  API 11 theme customizations can go here. 
  API 14 theme customizations can go here. 
-
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        
          */
         public static final int AppBaseTheme=0x7f080002;
-        /**  All customizations that are NOT specific to a particular API-level can go here. 
-         */
         public static final int AppTheme=0x7f080042;
         public static final int TextAppearance_AppCompat_Base_CompactMenu_Dialog=0x7f080043;
         public static final int TextAppearance_AppCompat_Base_SearchResult=0x7f080044;

@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Projects\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\abc_list_divider_holo_dark.9.png",
-        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\drawable-hdpi\\abc_list_divider_holo_dark.9.png"
-    },
-    {
         "merged": "C:\\Projects\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\abc_ab_bottom_solid_light_holo.9.png",
         "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\drawable-hdpi\\abc_ab_bottom_solid_light_holo.9.png"
+    },
+    {
+        "merged": "C:\\Projects\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\abc_list_divider_holo_dark.9.png",
+        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\drawable-hdpi\\abc_list_divider_holo_dark.9.png"
     },
     {
         "merged": "C:\\Projects\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\abc_ic_clear_disabled.png",
@@ -56,12 +56,12 @@
         "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\drawable-hdpi\\abc_ab_stacked_solid_dark_holo.9.png"
     },
     {
-        "merged": "C:\\Projects\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\abc_textfield_search_default_holo_dark.9.png",
-        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\drawable-hdpi\\abc_textfield_search_default_holo_dark.9.png"
-    },
-    {
         "merged": "C:\\Projects\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\abc_ic_go.png",
         "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\drawable-hdpi\\abc_ic_go.png"
+    },
+    {
+        "merged": "C:\\Projects\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\abc_textfield_search_default_holo_dark.9.png",
+        "source": "C:\\Users\\zweng\\.android\\build-cache\\17d4a2d7d0b3c8602178d74b9faef2d0f45cd545\\output\\res\\drawable-hdpi\\abc_textfield_search_default_holo_dark.9.png"
     },
     {
         "merged": "C:\\Projects\\BlueControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\abc_ic_menu_share_holo_light.png",

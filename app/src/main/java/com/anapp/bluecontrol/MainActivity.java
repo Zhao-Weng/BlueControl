@@ -1,9 +1,11 @@
 package com.anapp.bluecontrol;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -33,7 +35,7 @@ import static com.anapp.bluecontrol.R.id.add;
 public class MainActivity extends Activity {
   private static final String TAG = "LEDOnOff";
   
-  Button updateButton, addButton, deleteButton;
+  Button alert, addButton, deleteButton;
   TextView text;
     TextView dataString;
     Boolean addEnable = false;
@@ -54,7 +56,7 @@ public class MainActivity extends Activity {
   
   // Well known SPP UUID
   private static final UUID MY_UUID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
-
+    private boolean tempHigh = false;
   // Insert your bluetooth devices MAC address
   private static String address = "00:00:00:00:00:00";
   
@@ -84,6 +86,13 @@ public class MainActivity extends Activity {
     //dataString = (TextView) findViewById(R.id.textView1);
       //updateButton = (Button) findViewById(R.id.update);
       //updateButton.setEnabled(false);
+      alert = (Button)findViewById(R.id.alert);
+      alert.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+              openDialog();
+          }
+      });
       addButton = (Button) findViewById(add);
       addButton.setEnabled(false);
       deleteButton = (Button) findViewById(R.id.delete);
@@ -117,25 +126,40 @@ public class MainActivity extends Activity {
 
           }
       });
-//    updateButton.setOnClickListener(new View.OnClickListener() {
-//        @Override
-//        public void onClick(View view) {
-//
-//            for(int i = 0; i<arr.length;i++){
-//                System.out.print(arr[i]);
-//                rfidData +=arr[i];
-//            }
-//            System.out.print("Test Data String: ");
-//            dataString.setText(rfidData);
-//            showCheckList(hs);
-//        }
-//    });
+
 
 
     btAdapter = BluetoothAdapter.getDefaultAdapter();
     checkBTState();
 
+
   }
+    public void openDialog() {
+        AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
+        builder1.setTitle(R.string.dialog_title);
+        builder1.setMessage(R.string.dialog_text);
+        builder1.setCancelable(true);
+
+        builder1.setPositiveButton(
+                "Confirm",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+
+
+        AlertDialog alert11 = builder1.create();
+        //alert11.getButton(AlertDialog.BUTTON_POSITIVE).setBackgroundColor(Color.parseColor("#FFFFFF"));
+        alert11.show();
+
+
+//        final Dialog dialog = new Dialog(this); // Context, this, etc.
+//        dialog.setContentView(R.layout.dialog_demo);
+//        dialog.setTitle(R.string.dialog_title);
+//        dialog.show();
+
+    }
 
     private void showCheckList(Set<String> hs) {
         if (hs != null && hs.size() > 0) {
@@ -165,11 +189,7 @@ public class MainActivity extends Activity {
 //      msg.show();
 //  }
   
-  public void ledOff(View v){
-	  sendData("0");
-      Toast msg = Toast.makeText(getBaseContext(), "LED is OFF", Toast.LENGTH_SHORT);
-      msg.show();
-  }
+
 
 
 
@@ -347,23 +367,30 @@ public class MainActivity extends Activity {
                     if (mmInStream.available() > 0) {
                         this.num = -2;
                         numBytes = mmInStream.read(mmBuffer);
-
+                        for (int i = 0; i < 16; i ++) {
+                            arr[i] = '0';
+                        }
                         for (int i = 0; i < 16; i++) {
 
                             arr[i] = (char) mmBuffer[i];
                         }
                         String tag = String.valueOf(arr);
-                        if (map == null || map.size() == 0) System.out.printf("testing2332");
+                        if (wordDistance(tag.substring(0, 8), "temphigh") <= 2) {
+                            ;
+                        }
+                        System.out.printf("worddistance is %d, tag is %s\n", wordDistance(tag.substring(0, 8), "temphigh"), tag);
+
+                        if (map == null || map.size() == 0) System.out.printf("testing2332\n");
                         for (String item: map.keySet()) {
-                            System.out.printf("testing" + item);
+                            System.out.printf("testing" + item + "\n");
                         }
 
 
-                        for (String k: map.keySet()) System.out.printf("hm keys are %s", k);
-                        System.out.printf("tag is %s", tag);
+                        for (String k: map.keySet()) System.out.printf("hm keys are %s\n", k);
+                        //System.out.printf("tag is %s", tag);
                         String item = contain(map, tag);
                         if (item != null) System.out.printf("item is %s\n", item);
-                        else System.out.printf("item is null");
+                        else System.out.printf("item is null\n");
                         if (item != null) {
                             String bookN = map.get(item);
                            if (bookN != null) System.out.printf("book is %s\n", bookN);

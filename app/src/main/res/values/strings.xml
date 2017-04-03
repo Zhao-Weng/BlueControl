@@ -18,4 +18,6 @@
     <string name="secure_connect">Connect a device - Secure</string>
     <string name="insecure_connect">Connect a device - Insecure</string>
     <string name="discoverable">Make discoverable</string>
+    <string name="dialog_title">Temperature too high!!</string>
+    <string name="dialog_text">Please unplug the battery</string>
 </resources>
