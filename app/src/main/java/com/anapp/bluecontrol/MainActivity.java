@@ -8,6 +8,8 @@ import android.bluetooth.BluetoothSocket;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -40,6 +42,8 @@ public class MainActivity extends Activity {
     TextView dataString;
     Boolean addEnable = false;
 
+
+
     private ListView checkList;
   private BluetoothAdapter btAdapter = null;
   private BluetoothSocket btSocket = null;
@@ -59,7 +63,34 @@ public class MainActivity extends Activity {
     private boolean tempHigh = false;
   // Insert your bluetooth devices MAC address
   private static String address = "00:00:00:00:00:00";
-  
+
+    Handler handler = new Handler() {
+        @Override
+        public void handleMessage( Message msg) {
+            Bundle bundle = msg.getData();
+            String string = bundle.getString("myKey");
+            if (string.equals("show")) {
+                for(int i = 0; i<arr.length;i++){
+                    System.out.print(arr[i]);
+                    rfidData +=arr[i];
+                }
+                System.out.print("Test Data String: ");
+                //dataString.setText(rfidData);
+                showCheckList(hs);
+                TextView myTextView =
+                        (TextView)findViewById(R.id.textView1);
+                myTextView.setText(string);
+            }
+            else if (string.equals("temphigh")) {
+                openDialog();
+            }
+
+        }
+    };
+
+
+
+
   /** Called when the activity is first created. */
   @Override
   public void onCreate(Bundle savedInstanceState) {
@@ -127,10 +158,29 @@ public class MainActivity extends Activity {
           }
       });
 
+      Runnable runnable = new Runnable() {
+          public void run() {
 
+                  Message msg = handler.obtainMessage();
+                  Bundle bundle = new Bundle();
+
+                  bundle.putString("myKey", "show");
+                  msg.setData(bundle);
+                  handler.sendMessage(msg);
+              }
+          
+      };
+
+      Thread mythread = new Thread(runnable);
+      mythread.start();
 
     btAdapter = BluetoothAdapter.getDefaultAdapter();
     checkBTState();
+
+
+
+
+
 
 
   }
@@ -199,8 +249,7 @@ public class MainActivity extends Activity {
     //enable buttons once connection established.
     //updateButton.setEnabled(true);
     //updateButton.setEnabled(true);
-      addButton.setEnabled(true);
-      deleteButton.setEnabled(true);
+
     //btnOff.setEnabled(true);
     String dataString = "";
     
@@ -227,6 +276,8 @@ public class MainActivity extends Activity {
       btSocket.connect();
 //        myBlueToothService = new MyBlueToothService();
 //        myBlueToothService.start();
+        addButton.setEnabled(true);
+        deleteButton.setEnabled(true);
         connectedThread = new ConnectedThread(btSocket);
         connectedThread.start();
 
@@ -378,6 +429,13 @@ public class MainActivity extends Activity {
                         if (wordDistance(tag.substring(0, 8), "temphigh") <= 2) {
                             ;
                         }
+
+                        Message msg = handler.obtainMessage();
+                        Bundle bundle = new Bundle();
+                        bundle.putString("myKey", "show");
+                        msg.setData(bundle);
+                        handler.sendMessage(msg);
+
                         System.out.printf("worddistance is %d, tag is %s\n", wordDistance(tag.substring(0, 8), "temphigh"), tag);
 
                         if (map == null || map.size() == 0) System.out.printf("testing2332\n");
