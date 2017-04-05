@@ -77,9 +77,7 @@ public class MainActivity extends Activity {
                 System.out.print("Test Data String: ");
                 //dataString.setText(rfidData);
                 showCheckList(hs);
-                TextView myTextView =
-                        (TextView)findViewById(R.id.textView1);
-                myTextView.setText(string);
+
             }
             else if (string.equals("temphigh")) {
                 openDialog();
@@ -117,13 +115,7 @@ public class MainActivity extends Activity {
     //dataString = (TextView) findViewById(R.id.textView1);
       //updateButton = (Button) findViewById(R.id.update);
       //updateButton.setEnabled(false);
-      alert = (Button)findViewById(R.id.alert);
-      alert.setOnClickListener(new View.OnClickListener() {
-          @Override
-          public void onClick(View view) {
-              openDialog();
-          }
-      });
+
       addButton = (Button) findViewById(add);
       addButton.setEnabled(false);
       deleteButton = (Button) findViewById(R.id.delete);
@@ -158,21 +150,21 @@ public class MainActivity extends Activity {
           }
       });
 
-      Runnable runnable = new Runnable() {
-          public void run() {
-
-                  Message msg = handler.obtainMessage();
-                  Bundle bundle = new Bundle();
-
-                  bundle.putString("myKey", "show");
-                  msg.setData(bundle);
-                  handler.sendMessage(msg);
-              }
-          
-      };
-
-      Thread mythread = new Thread(runnable);
-      mythread.start();
+//      Runnable runnable = new Runnable() {
+//          public void run() {
+//
+//                  Message msg = handler.obtainMessage();
+//                  Bundle bundle = new Bundle();
+//
+//                  bundle.putString("myKey", "show");
+//                  msg.setData(bundle);
+//                  handler.sendMessage(msg);
+//              }
+//
+//      };
+//
+//      Thread mythread = new Thread(runnable);
+//      mythread.start();
 
     btAdapter = BluetoothAdapter.getDefaultAdapter();
     checkBTState();
@@ -427,16 +419,17 @@ public class MainActivity extends Activity {
                         }
                         String tag = String.valueOf(arr);
                         if (wordDistance(tag.substring(0, 8), "temphigh") <= 2) {
-                            ;
+                            System.out.printf("temp high !!!!!!!!!!!!!!!!!");
+                            Message msg = handler.obtainMessage();
+                            Bundle bundle = new Bundle();
+                            bundle.putString("myKey", "temphigh");
+                            msg.setData(bundle);
+                            handler.sendMessage(msg);
                         }
 
-                        Message msg = handler.obtainMessage();
-                        Bundle bundle = new Bundle();
-                        bundle.putString("myKey", "show");
-                        msg.setData(bundle);
-                        handler.sendMessage(msg);
 
-                        System.out.printf("worddistance is %d, tag is %s\n", wordDistance(tag.substring(0, 8), "temphigh"), tag);
+                        System.out.printf("substring is %s\n", tag.substring(0, 8));
+                        System.out.printf("wd temp high is %d, tag is %s\n", wordDistance(tag.substring(0, 8), "temphigh"), tag);
 
                         if (map == null || map.size() == 0) System.out.printf("testing2332\n");
                         for (String item: map.keySet()) {
@@ -460,7 +453,11 @@ public class MainActivity extends Activity {
                             else if (!addEnable){
                                 hs.add(bookN);               //previously in the bag, now missing
                             }
-                            //showCheckList(hs);   //update checklist and show it.
+                            Message msg = handler.obtainMessage();
+                            Bundle bundle = new Bundle();
+                            bundle.putString("myKey", "show");
+                            msg.setData(bundle);
+                            handler.sendMessage(msg);
                         }
                     }
 
