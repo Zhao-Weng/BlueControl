@@ -37,7 +37,7 @@ import static com.anapp.bluecontrol.R.id.add;
 public class MainActivity extends Activity {
   private static final String TAG = "LEDOnOff";
   
-  Button alert, addButton, deleteButton;
+  Button  addButton, deleteButton;
   TextView text;
     TextView dataString;
     Boolean addEnable = false;
@@ -50,7 +50,6 @@ public class MainActivity extends Activity {
   private OutputStream outStream = null;
     private ConnectedThread connectedThread = null;
     public char[] arr = new char[16];
-    String rfidData = " ";
 
     private Map<String, String> map = null;
     private Set<String> hs = null;
@@ -105,25 +104,16 @@ public class MainActivity extends Activity {
 
 
     text = (TextView) findViewById(R.id.textEdit);
-    //dataString = (TextView) findViewById(R.id.textView1);
-      //updateButton = (Button) findViewById(R.id.update);
-      //updateButton.setEnabled(false);
+
 
       addButton = (Button) findViewById(add);
       addButton.setEnabled(false);
       deleteButton = (Button) findViewById(R.id.delete);
       deleteButton.setEnabled(false);
-    //btnOff.setEnabled(false);
       addButton.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View view) {
               addEnable = true;
-              for(int i = 0; i<arr.length;i++){
-                  System.out.print(arr[i]);
-                  rfidData +=arr[i];
-              }
-              System.out.print("Test Data String: ");
-              //dataString.setText(rfidData);
               showCheckList(hs);
           }
       });
@@ -131,15 +121,6 @@ public class MainActivity extends Activity {
           @Override
           public void onClick(View view) {
               addEnable = false;
-              for(int i = 0; i<arr.length;i++){
-                  System.out.print(arr[i]);
-                  rfidData +=arr[i];
-              }
-              System.out.print("Test Data String: ");
-              //dataString.setText(rfidData);
-              showCheckList(hs);
-
-
           }
       });
 
@@ -357,7 +338,6 @@ public class MainActivity extends Activity {
         private int num = -1;
         private byte[] mmBuffer; // mmBuffer store for the stream
         public final String testTag = "test";
-        private String dataString = "";
 
 
 
@@ -388,7 +368,6 @@ public class MainActivity extends Activity {
             int numBytes; // bytes returned from read()
             this.num = -3;
             // Keep listening to the InputStream until an exception occurs.
-            System.out.println("testinge");
 
             while (true) {
                 try {
