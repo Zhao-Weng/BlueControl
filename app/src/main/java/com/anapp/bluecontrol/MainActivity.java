@@ -453,7 +453,7 @@ public class MainActivity extends Activity {
         // Call this from the main activity to send data to the remote device.
         public String contain(Map<String, String> hm, String tag) {
             for (String item: hm.keySet()) {
-                if (wordDistance(item, tag.substring(0, 8)) <= 2) {
+                if (wordDistance(item, tag.substring(0, 8)) <= 1) {
                     return item;
                 }
             }
