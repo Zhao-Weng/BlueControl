@@ -70,12 +70,6 @@ public class MainActivity extends Activity {
             Bundle bundle = msg.getData();
             String string = bundle.getString("myKey");
             if (string.equals("show")) {
-                for(int i = 0; i<arr.length;i++){
-                    System.out.print(arr[i]);
-                    rfidData +=arr[i];
-                }
-                System.out.print("Test Data String: ");
-                //dataString.setText(rfidData);
                 showCheckList(hs);
             }
             else if (string.equals("temphigh")) {
@@ -237,11 +231,7 @@ public class MainActivity extends Activity {
   public void connectToDevice(String adr) {
     super.onResume();
     
-    //enable buttons once connection established.
-    //updateButton.setEnabled(true);
-    //updateButton.setEnabled(true);
 
-    //btnOff.setEnabled(true);
     String dataString = "";
     
     
@@ -265,8 +255,6 @@ public class MainActivity extends Activity {
     // Establish the connection.  This will block until it connects.
     try {
       btSocket.connect();
-//        myBlueToothService = new MyBlueToothService();
-//        myBlueToothService.start();
         addButton.setEnabled(true);
         deleteButton.setEnabled(true);
         connectedThread = new ConnectedThread(btSocket);
@@ -371,9 +359,7 @@ public class MainActivity extends Activity {
         public final String testTag = "test";
         private String dataString = "";
 
-//        public int getNum() {
-//            return num;
-//        }
+
 
         public ConnectedThread(BluetoothSocket socket) {
             mmSocket = socket;
@@ -430,14 +416,12 @@ public class MainActivity extends Activity {
                         System.out.printf("substring is %s\n", tag.substring(0, 8));
                         System.out.printf("wd temp high is %d, tag is %s\n", wordDistance(tag.substring(0, 8), "temphigh"), tag);
 
-                        if (map == null || map.size() == 0) System.out.printf("testing2332\n");
                         for (String item: map.keySet()) {
                             System.out.printf("testing" + item + "\n");
                         }
 
 
                         for (String k: map.keySet()) System.out.printf("hm keys are %s\n", k);
-                        //System.out.printf("tag is %s", tag);
                         String item = contain(map, tag);
                         if (item != null) System.out.printf("item is %s\n", item);
                         else System.out.printf("item is null\n");
@@ -447,7 +431,6 @@ public class MainActivity extends Activity {
                             else System.out.println("bookN is null");
                             if (hs.contains(bookN) && addEnable) {
                                 hs.remove(bookN);            //previously missing, now in the bag
-                                System.out.printf("remove book %s\n", bookN);
                             }
                             else if (!addEnable){
                                 hs.add(bookN);               //previously in the bag, now missing
@@ -470,11 +453,7 @@ public class MainActivity extends Activity {
         // Call this from the main activity to send data to the remote device.
         public String contain(Map<String, String> hm, String tag) {
             for (String item: hm.keySet()) {
-                System.out.printf("distance is %d\n", wordDistance(item, tag.substring(0, 9)));
-                System.out.printf("tag substring is %s\n", tag.substring(0, 9));
-                if (wordDistance(item, tag.substring(0, 9)) <= 2) {
-                    System.out.printf("return from contain");
-
+                if (wordDistance(item, tag.substring(0, 8)) <= 2) {
                     return item;
                 }
             }
