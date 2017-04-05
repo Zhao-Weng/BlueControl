@@ -77,7 +77,6 @@ public class MainActivity extends Activity {
                 System.out.print("Test Data String: ");
                 //dataString.setText(rfidData);
                 showCheckList(hs);
-
             }
             else if (string.equals("temphigh")) {
                 openDialog();
